@@ -1,4 +1,4 @@
-export default ({ locale, biImage, iconStyle: { normal, hover, disabled }, loadButtonStyle, downloadButtonStyle }) => (`
+export default ({locale, biImage, iconStyle: {normal, hover, disabled}, loadButtonStyle, downloadButtonStyle}) => (`
     <div class="tui-image-editor-controls">
         <div class="tui-image-editor-controls-logo">
             <img src="${biImage}" />

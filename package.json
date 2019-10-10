@@ -63,7 +63,7 @@
     "tui-jsdoc-template": "^1.0.4",
     "typescript": "^3.2.2",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.11.0"
+    "webpack-dev-server": "^1.16.5"
   },
   "scripts": {
     "test": "karma start --no-single-run",
