@@ -2,44 +2,51 @@
  * @param {Locale} locale - Translate text
  * @returns {string}
  */
-export default ({locale}) => (`
+export default ({ locale }) => (`
     <ul class="tui-image-editor-submenu-item">
         <li class="tui-image-editor-submenu-align">
-            <div class="tui-image-editor-checkbox-wrap fixed-width">
-                <div class="tui-image-editor-checkbox">
+            <div class="tui-image-editor-checkbox-wrap fixed-width fliter-width">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-grayscale">
-                    <label for="tie-grayscale">${locale.localize('Grayscale')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay musty" for="tie-grayscale">${locale.localize('Grayscale')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-invert">
-                    <label for="tie-invert">${locale.localize('Invert')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay hoppy" for="tie-invert">${locale.localize('Inver')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-sepia">
-                    <label for="tie-sepia">${locale.localize('Sepia')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay bloom" for="tie-sepia">${locale.localize('Sepia')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-sepia2">
-                    <label for="tie-sepia2">${locale.localize('Sepia2')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay frost" for="tie-sepia2">${locale.localize('Sepia2')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-blur">
-                    <label for="tie-blur">${locale.localize('Blur')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay endow" for="tie-blur">${locale.localize('Blur')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-sharpen">
-                    <label for="tie-sharpen">${locale.localize('Sharpen')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay pukka" for="tie-sharpen">${locale.localize('Sharpen')}</label>
                 </div>
-                <div class="tui-image-editor-checkbox">
+                <div class="tui-image-editor-checkbox fliter-check">
                     <input type="checkbox" id="tie-emboss">
-                    <label for="tie-emboss">${locale.localize('Emboss')}</label>
+                    <img src="img/sampleImage2.png" alt="" class="filter-img">
+                    <label class="filter-label overlay burf" for="tie-emboss">${locale.localize('Emboss')}</label>
                 </div>
             </div>
         </li>
-        <li class="tui-image-editor-partition">
+        <li class="tui-image-editor-partition d-none">
             <div></div>
-        </li>
-        <li class="tui-image-editor-submenu-align">
+         </li>
+        <li class="tui-image-editor-submenu-align d-none">
             <div class="tui-image-editor-checkbox-group tui-image-editor-disabled" style="margin-bottom: 7px;">
                 <div class="tui-image-editor-checkbox-wrap">
                     <div class="tui-image-editor-checkbox">
@@ -71,10 +78,10 @@ export default ({locale}) => (`
                 </div>
             </div>
         </li>
-        <li class="tui-image-editor-partition only-left-right">
+        <li class="tui-image-editor-partition only-left-right d-none">
             <div></div>
         </li>
-        <li class="tui-image-editor-submenu-align">
+        <li class="tui-image-editor-submenu-align d-none">
             <div class="tui-image-editor-checkbox-group tui-image-editor-disabled">
                 <div class="tui-image-editor-checkbox">
                     <input type="checkbox" id="tie-pixelate">
@@ -97,10 +104,10 @@ export default ({locale}) => (`
                 </div>
             </div>
         </li>
-        <li class="tui-image-editor-partition">
+        <li class="tui-image-editor-partition d-none">
             <div></div>
         </li>
-        <li>
+        <li class="d-none">
             <div class="filter-color-item">
                 <div id="tie-filter-tint-color" title="${locale.localize('Tint')}"></div>
                 <div class="tui-image-editor-checkbox">

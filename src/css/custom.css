@@ -1,0 +1,109 @@
+.d-none {
+    display: none !important;
+}
+
+/* .tui-image-editor {
+    height: 400px !important;
+} */
+
+.fliter-width {
+    width: 100% !important;
+}
+
+
+.fliter-check {
+    position: relative;
+}
+
+.tui-image-editor-container .tui-image-editor-checkbox input+label:before {
+    display: none !important;
+}
+
+.fliter-check .filter-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.overlay {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    width: 65px !important;
+    height: 65px;
+    transition: .5s ease;
+    opacity: 1;
+    border-radius: 100%;
+    line-height: 5;
+}
+
+.fliter-check .overlay.musty {
+    background: rgb(124, 124, 124);
+    background: rgba(124, 124, 124, 0.5);
+}
+
+.fliter-check .overlay.hoppy {
+    background: rgb(128, 155, 225);
+    background: rgba(128, 155, 225, 0.5);
+}
+
+.fliter-check .overlay.bloom {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.fliter-check .overlay.frost {
+    background: rgb(218, 220, 54);
+    background: rgba(218, 220, 54, 0.5);
+}
+
+.fliter-check .overlay.endow {
+    background: rgb(225, 143, 69);
+    background: rgba(225, 143, 69, 0.5);
+}
+
+.fliter-check .overlay.burf {
+    background: rgb(38, 38, 38);
+    background: rgba(38, 38, 38, 0.5);
+}
+
+/* .tui-image-editor-container .tui-image-editor-controls {
+    background-color: gray !important;
+}
+
+.tui-image-editor-container .tui-image-editor-controls {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.tui-image-editor-container .tui-image-editor-menu {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 50% 0 90% !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+.tui-image-editor-container .tui-image-editor-menu>.tui-image-editor-item {
+    margin: 0 14px !important;
+} */
+
+.tui-image-editor-container .tui-image-editor-menu>.tui-image-editor-item.active {
+    width: 60px;
+    height: 60px;
+}
+
+/* .control-img {
+    margin: 0 12px !important;
+} */
+
+.tui-image-editor-item .svg_ic-menu img {
+    width: 50px;
+    height: 50px;
+}

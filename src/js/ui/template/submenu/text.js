@@ -4,7 +4,7 @@
  * @param {Object} active - iconStyle
  * @returns {string}
  */
-export default ({locale, iconStyle: {normal, active}}) => (`
+export default ({ locale, iconStyle: { normal, active } }) => (`
     <ul class="tui-image-editor-submenu-item">
         <li id="tie-text-effect-button">
             <div class="tui-image-editor-button bold">
@@ -25,7 +25,7 @@ export default ({locale, iconStyle: {normal, active}}) => (`
                 </div>
                 <label> ${locale.localize('Italic')} </label>
             </div>
-            <div class="tui-image-editor-button underline">
+            <div class="tui-image-editor-button underline d-none">
                 <div>
                     <svg class="svg_ic-submenu">
                         <use xlink:href="${normal.path}#${normal.name}-ic-text-underline"
@@ -37,11 +37,11 @@ export default ({locale, iconStyle: {normal, active}}) => (`
                 <label> ${locale.localize('Underline')} </label>
             </div>
         </li>
-        <li class="tui-image-editor-partition">
+        <li class="tui-image-editor-partition d-none">
             <div></div>
         </li>
         <li id="tie-text-align-button">
-            <div class="tui-image-editor-button left">
+            <div class="tui-image-editor-button left d-none">
                 <div>
                     <svg class="svg_ic-submenu">
                      <use xlink:href="${normal.path}#${normal.name}-ic-text-align-left"
@@ -52,7 +52,7 @@ export default ({locale, iconStyle: {normal, active}}) => (`
                 </div>
                 <label> ${locale.localize('Left')} </label>
             </div>
-            <div class="tui-image-editor-button center">
+            <div class="tui-image-editor-button center d-none">
                 <div>
                     <svg class="svg_ic-submenu">
                      <use xlink:href="${normal.path}#${normal.name}-ic-text-align-center"
@@ -63,7 +63,7 @@ export default ({locale, iconStyle: {normal, active}}) => (`
                 </div>
                 <label> ${locale.localize('Center')} </label>
             </div>
-            <div class="tui-image-editor-button right">
+            <div class="tui-image-editor-button right d-none">
                 <div>
                     <svg class="svg_ic-submenu">
                      <use xlink:href="${normal.path}#${normal.name}-ic-text-align-right"
